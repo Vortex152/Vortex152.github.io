@@ -3,7 +3,7 @@ function time()
 {
     let ap="A.M"
     let time = new Date();
-    let hr,min,sec,day,month,year;
+    let hr,min,sec;
     hr=time.getHours();
     min=time.getMinutes();
     sec=time.getSeconds();
@@ -17,9 +17,9 @@ function time()
     }
     let out=hr+":"+min+":"+sec+"  "+ap;
     document.getElementById("clock").innerHTML=out;
-    day=time.getDay()-1;
-    month=time.getMonth()+1;
-    year=time.getFullYear();
+    let day=time.getDay();
+    let month=time.getMonth();
+    let year=time.getFullYear();
     let out2=day+"/"+month+"/"+year;
     document.getElementById("day").innerHTML=out2;
 
