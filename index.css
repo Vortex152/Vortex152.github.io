@@ -1,6 +1,7 @@
 body{
             
-    background-image: url('1128129.jpg');
+    /* background-image: url('1128129.jpg'); */
+    background-color: lightgreen;
     background-attachment:local;
     background-size: cover;
 }
